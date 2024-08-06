@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+    <script>
+      class Cube {
+        constructor() {
+          this.height = 0;
+          this.width = 0;
+          this.length = 0;
+        }
+
+        setHeight(height) {
+          this.height = height
+        }
+
+        setWidth(width) {
+          this.width = width;
+        }
+
+        setLength(length) {
+          this.length = length;
+        }
+
+        printHeight() {
+          document.write(`Height: ${this.height}`, "<br>");
+        }
+
+        printWidth() {
+          document.write(`Width: ${this.width}`, "<br>");
+        }
+
+        printLength() {
+          document.write(`Length: ${this.length}`);
+        }
+      }
+
+      var cube = new Cube();
+      cube.setHeight(10);
+      cube.setWidth(20);
+      cube.setLength(30);
+
+      cube.printHeight();
+      cube.printWidth();
+      cube.printLength();
+    </script>
+</body>
+</html>
