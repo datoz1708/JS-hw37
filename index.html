@@ -15,7 +15,7 @@
         }
 
         setHeight(height) {
-          this.height = height
+          this.height = height;
         }
 
         setWidth(width) {
@@ -26,16 +26,16 @@
           this.length = length;
         }
 
-        printHeight() {
-          document.write(`Height: ${this.height}`, "<br>");
+        getHeight() {
+          return `Height: ${this.height}`;
         }
 
-        printWidth() {
-          document.write(`Width: ${this.width}`, "<br>");
+        getWidth() {
+          return `Width: ${this.width}`;
         }
 
-        printLength() {
-          document.write(`Length: ${this.length}`);
+        getLength() {
+          return `Length: ${this.length}`;
         }
       }
 
@@ -44,9 +44,9 @@
       cube.setWidth(20);
       cube.setLength(30);
 
-      cube.printHeight();
-      cube.printWidth();
-      cube.printLength();
+      document.write(cube.getHeight(), "<br>");
+      document.write(cube.getWidth(), "<br>");
+      document.write(cube.getLength());
     </script>
 </body>
 </html>
